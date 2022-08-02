@@ -17,6 +17,14 @@ let num2 = 32;
 - Alert `The sum of [num1] and [num2] is [num1 + num1]`
 */
 
+let language = javaScript
+
+alert(`I am learning ${language}`)
+alert(`The value of num1 is ${num1} and the value of num2 is ${num2}`)
+alert(`The sum of ${num1} and ${num2} is ${num1 + num1}`)
+
+
+
 /*
 2. Do the following using `alert`, `prompt` and `confirm` and `console`
 
@@ -25,13 +33,27 @@ let num2 = 32;
   - Using confirm check if user is adult or not and store the value in `isAdult`
   - Alert message `I am [userName] a [userProfession]`
   - Log the message `I am [userName] a [userProfession]`
-  - Alet message `Username: [userName]
+  - Alert message `Username: [userName]
     Adult: [isAdult]
     Profession: [userProfession]` (it should be in three different lines)
   - Log the message using console.log `Username: [userName]
     Adult: [isAdult]
     Profession: [userProfession]` (it should be in three different lines)
 */
+
+     let userNames = prompt(`what's the userName`)
+     let userProfession = prompt(`what's the profession`)
+     let isAdult = confirm(`if the user is adult`)
+     alert(`I am ${userName} a ${userProfession}`)
+     alert(`${userName}`)
+     adult(`${isAdult}`)
+     Profession(`userProfession`)
+    console.log(`Username: ${userName}Adult: ${isAdult}Profession: ${userProfession}`)
+
+
+
+
+
 
 /*
 . Addition using prompt
@@ -43,3 +65,10 @@ let num2 = 32;
   - Log using console.log [numA - numB]
   - Log using console.log [numA * numB]
 */
+let numA = prompt(`32`)
+let numB = prompt(`43`)
+alert(`${numA}+${numB}`)
+alert(`${numA}-${numB}`)
+alert(`${numA}*${numB}`)
+console.log("numA" - "numB")
+console.log("numA"*"numB")
