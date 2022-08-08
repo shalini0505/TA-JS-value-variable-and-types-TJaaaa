@@ -6,22 +6,55 @@
 4. Now change the value of `user` to `John` and log the value of both `user` and `userName`.
 */
 
+ let user =prompt(`write your name`)
+alert(user);
+ let userName = `user`;
+console.log(`userName`);
+let age = 23, isLearning = true;
+user = `shalini`;
+console.log(user, "user", userName, "userName");
+
+
 /* 2.
 Use `prompt` to take two numbers from user and store it in variable `numA` and `numB`. Create a third variable called `sum`, using `+` operator add numA and numB , store it in varible `sum` and using alert display `sum` in browser.
 */
+let numA = prompt(`write a number`)
+let numB = prompt(`write a number`)
+let sum = numA + numB;
+alert(sum);
 
 // Loops
 
 // 3. Complete the following code to make the output be 0 2 4 6 8 10?
 
-for (let j = 0; j <= 10; ____) console.log(j);
+for (let j = 0; j <= 10; j = j + 2){
+  console.log(j);  
+} 
+
 
 // 4. Print the odd numbers from 9 to 1 (both inclusive) using a for loop.
+for (let i = 9; i >= 1; i = i - 2){
+    console.log(i);   
+}
+
 
 // 5. Concat all the numbers from 5 to 0 (both inclusive) in descending order using a while loop. (543210)
 
+for (let a = 5; a >= 0; a = a - 1){
+    console.log (a);
+}
+
 // 6. Concat all the even numbers from 10 to 0 (both inclusive) in descending order using a while loop. (1086420)
 
+let c = " ";   
+let i = 10 ;
+while (i > 0){
+  if(i % 2 == 0){
+   c = c + i;
+}
+i = i -1;
+}
+console.log(c)
 // Comparisoin
 
 /* 7. Take two value using prompt and store them in variables `num1` and `num2`. Check whether they are equal or not.
@@ -36,3 +69,10 @@ Example:
 "hello", -21; // false
 
 */
+var num1 = + prompt("Enter value one");
+var num2 = + prompt("Enter value two"); 
+if(isNaN(num1)|| isNaN(num2)){
+  alert(`enter a valid value `)
+}else{
+  alert(num1===num2)
+}
